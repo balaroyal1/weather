@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trendy Weather App</title>
+    <title>Modern Weather App</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="weather-container">
-        <div id="globe-container"></div>
-        <div id="weather-info">
-            <h1 id="location">Loading...</h1>
-            <div id="temperature"></div>
-            <div id="description"></div>
-            <div id="weather-icon"></div>
+    <div class="container">
+        <div class="weather-card">
+            <div class="weather-icon">
+                <div class="sun-icon"></div>
+                <div class="cloud-icon"></div>
+            </div>
+            <div class="location" id="location">Loading...</div>
+            <div class="temperature" id="temperature">--°C</div>
+            <div class="description" id="description">Fetching weather data...</div>
+        </div>
+        <div class="forecast">
+            <div class="forecast-item" id="day1">
+                <div class="day">Mon</div>
+                <div class="temp">--°C</div>
+            </div>
+            <div class="forecast-item" id="day2">
+                <div class="day">Tue</div>
+                <div class="temp">--°C</div>
+            </div>
+            <div class="forecast-item" id="day3">
+                <div class="day">Wed</div>
+                <div class="temp">--°C</div>
+            </div>
         </div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
