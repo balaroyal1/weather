@@ -116,6 +116,12 @@ body, html {
     font-weight: 600;
 }
 
+.error-message {
+    color: #ff6b6b;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.1); }
