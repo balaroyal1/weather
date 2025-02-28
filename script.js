@@ -30,7 +30,7 @@ function initGlobe() {
 }
 
 // Weather Data
-const API_KEY = 'YOUR_OPENWEATHERMAP_API_KEY';
+const API_KEY = '16d6bd877c81080309ddf407e4407bf6';
 
 function getWeatherData(lat, lon) {
     fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`)
